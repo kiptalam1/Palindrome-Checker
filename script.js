@@ -3,7 +3,8 @@ const checkBtn = document.getElementById('check-btn');
 const result = document.getElementById('result');
 
 
-function isPalindrome() {
+function isPalindrome(event) {
+    event.preventDefault();
     const inputText = textInput.value.trim();
 
     if (!inputText) {
